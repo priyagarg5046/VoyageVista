@@ -36,108 +36,6 @@ function AllDestinations() {
     }
 
 =======
-// import React from 'react';
-// import Card from 'react-bootstrap/Card';
-
-// import parisimg from '../images/destination-Img/paris.jpg';
-// import baliimg from '../images/destination-Img/bali.jpg';
-// import nyimg from '../images/destination-Img/newyork.jpg';
-// import sydneyimg from '../images/destination-Img/sydney.jpg';
-// import pin from '../images/destination-Img/pin.png';
-
-// const data = [
-//     { 
-//         id: 1, 
-//         name: "Paris", 
-//         description: "The city of light and love, known for its iconic Eiffel Tower and rich culture.", 
-//         location: "France", 
-//         image: parisimg, 
-//         category: "Romantic" 
-//     },
-//     { 
-//         id: 2, 
-//         name: "Bali", 
-//         description: "A tropical paradise with stunning beaches and vibrant culture.", 
-//         location: "Indonesia", 
-//         image: baliimg, 
-//         category: "Adventure" 
-//     },
-//     { 
-//         id: 3, 
-//         name: "New York", 
-//         description: "The city that never sleeps, famous for its skyline and bustling streets.", 
-//         location: "USA", 
-//         image: nyimg, 
-//         category: "Urban" 
-//     },
-//     { 
-//         id: 4, 
-//         name: "Sydney", 
-//         description: "Known for the Sydney Opera House, Harbour Bridge, and beautiful beaches.", 
-//         location: "Australia", 
-//         image: sydneyimg, 
-//         category: "Coastal" 
-//     },
-// ];
-
-// function AllDestinations() {
-//     return (
-//         <div className="p-5" style={{ background: 'rgb(245, 245, 245)' }}>
-//             <h1 className="fw-bold pt-5" style={{ fontFamily: 'sans-serif' }}>Destinations</h1>
-
-//             <div className="container">
-//                 <div className="row justify-content-center pt-2">
-//                     {data.map((destination, index) => (
-//                         <div key={index} className="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
-//                             <Card style={{ width: '18rem', border: 'none', boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)' }}>
-//                                 <Card.Img variant="top" src={destination.image} alt={destination.name} />
-//                                 <Card.Body>
-//                                     <Card.Title className="fw-bold" style={{ textAlign: 'start', fontSize: '1.5rem' }}>
-//                                         {destination.name}
-//                                     </Card.Title>
-//                                     <Card.Text className="text-secondary" style={{ textAlign: 'start', fontSize: '0.9rem' }}>
-//                                         {destination.description}
-//                                     </Card.Text>
-
-//                                     <hr style={{ borderTop: '1px solid #ddd' }} />
-
-//                                     <div className="d-flex justify-content-between align-items-center">
-//                                         <div className="d-flex align-items-center">
-//                                             <img 
-//                                                 className="me-2" 
-//                                                 src={pin} 
-//                                                 alt="Location Pin" 
-//                                                 style={{ height: '20px' }} 
-//                                             />
-//                                             <span className="text-secondary" style={{ fontSize: '0.9rem' }}>
-//                                                 {destination.location}
-//                                             </span>
-//                                         </div>
-
-//                                         <span 
-//                                             className="badge bg-light text-secondary fw-bold" 
-//                                             style={{
-//                                                 border: '1px solid #ddd', 
-//                                                 fontSize: '0.8rem',
-//                                                 padding: '5px 10px',
-//                                                 borderRadius: '12px'
-//                                             }}>
-//                                             {destination.category}
-//                                         </span>
-//                                     </div>
-//                                 </Card.Body>
-//                             </Card>
-//                         </div>
-//                     ))}
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default AllDestinations;
-
-
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 
@@ -186,8 +84,8 @@ function AllDestinations() {
 >>>>>>> 7bb4ee34a8a0cf16509c9105febc8dd319252a66
     return (
         <div className="p-5" style={{ background: 'rgb(245, 245, 245)' }}>
-            <h1 className="fw-bold pt-5" style={{ fontFamily: 'sans-serif' }}>Explore Popular Destinations</h1>
-
+             <h1 className="fw-bold pt-5" style={{ fontFamily: 'georgia' }}>Travel the World</h1>
+            <p className=" pb-5" style={{ fontFamily: 'cursive', fontSize:'1.5rem' }}>Explore diverse cultures, iconic landmarks, and stunning views across the globe</p>
             <div className="container">
                 <div className="row justify-content-center pt-3">
                     {data.map((destination, index) => (
