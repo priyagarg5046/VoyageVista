@@ -33,7 +33,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Tab, Nav, Card, Button } from 'react-bootstrap';
 import {  FaUmbrellaBeach,FaMountain, FaCity, FaTree } from 'react-icons/fa'; 
-
+import { Link } from 'react-router-dom';
 
 import maldives from'./images/inspo-sec/maldives.jpg';
 import bali from'./images/inspo-sec/bali.jpg';
@@ -51,24 +51,24 @@ import greatbarrier from'./images/inspo-sec/barrier-reef.jpg';
 
 const recommendations = {
     beach: [
-        { name: "Maldives", description: "Beautiful beaches with crystal clear water." , image: maldives },
-        { name: "Bali", description: "Stunning beaches and vibrant culture", image: bali },
-      { name: "Hawaii", description: "Tropical paradise with diverse landscapes", image: Hawaii },
+        { name: "Maldives", description: "Beautiful beaches with crystal clear water." , image: maldives, link:'/Beach_Destinations'},
+        { name: "Bali", description: "Stunning beaches and vibrant culture", image: bali, link:'/Beach_Destinations' },
+      { name: "Hawaii", description: "Tropical paradise with diverse landscapes", image: Hawaii, link:'/Beach_Destinations' },
     ],
     mountain: [
-        { name: "Swiss Alps", description: "Majestic peaks and world-class skiing", image: swissalps },
-        { name: "Patagonia", description: "Rugged wilderness and breathtaking views", image: patagonia },
-        { name: "Himalayas", description: "Scenic beauty and outdoor adventures", image: himalayas },
+        { name: "Swiss Alps", description: "Majestic peaks and world-class skiing", image: swissalps, link:'/Mountain_Destinations'},
+        { name: "Patagonia", description: "Rugged wilderness and breathtaking views", image: patagonia , link:'/Mountain_Destinations' },
+        { name: "Himalayas", description: "Scenic beauty and outdoor adventures", image: himalayas , link:'/Mountain_Destinations'},
       ],
       city: [
-        { name: "Tokyo", description: "Futuristic technology meets ancient traditions", image: tokyo },
-        { name: "Paris", description: "Romance, art, and exquisite cuisine", image: paris },
-        { name: "New York", description: "The city that never sleeps", image: newyork },
+        { name: "Tokyo", description: "Futuristic technology meets ancient traditions", image: tokyo, link:'/City_Destinations' },
+        { name: "Paris", description: "Romance, art, and exquisite cuisine", image: paris, link:'/City_Destinations' },
+        { name: "New York", description: "The city that never sleeps", image: newyork, link:'/City_Destinations' },
       ],
       nature: [
-        { name: "Amazon Rainforest", description: "Unparalleled biodiversity and adventure", image: amazon },
-        { name: "Yellowstone", description: "Geothermal wonders and wildlife", image: yellowstone },
-        { name: "Great Barrier Reef", description: "World's largest coral reef system", image: greatbarrier },
+        { name: "Amazon Rainforest", description: "Unparalleled biodiversity and adventure", image: amazon, link:'/Nature_Destinations' },
+        { name: "Yellowstone", description: "Geothermal wonders and wildlife", image: yellowstone, link:'/Nature_Destinations' },
+        { name: "Great Barrier Reef", description: "World's largest coral reef system", image: greatbarrier, link:'/Nature_Destinations' },
       ],
 };
 
@@ -104,7 +104,9 @@ function Inspo() {
                                             <Card.Body>
                                                 <Card.Title>{item.name}</Card.Title>
                                                 <Card.Text>{item.description}</Card.Text>
-                                                <Button variant="info">Learn More</Button>
+                                               <Link to={item.link}>
+                                                    <Button variant="info">Learn More</Button>
+                                                </Link>
                                             </Card.Body>
                                         </Card>
                                     </Col>
