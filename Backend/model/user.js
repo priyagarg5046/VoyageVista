@@ -4,7 +4,6 @@ const userSchema=mongoose.Schema(
     email:String,
     username:String,
     password:String,
-    dateOfBirth:Date,
     isAdmin:{ type: Boolean, default: false },
 
     }

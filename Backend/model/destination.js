@@ -3,12 +3,9 @@ import mongoose from 'mongoose';
 const destinationSchema = new mongoose.Schema({
     name: { type: String, required: true },
     description: { type: String, required: true },
-    location: {
-        latitude: { type: Number, required: true },
-        longitude: { type: Number, required: true }
-    },
-    imageUrl: { type: String },
-    category: { type: String }
+    image: { type: String },
+    category: { type: String },
+    location :{type:String},
 }, {
     timestamps: true
 });
