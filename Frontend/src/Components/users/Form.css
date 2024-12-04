@@ -2,20 +2,22 @@
     margin: 0;
     padding: 0;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
     font-family: serif;
-    /* background-image: url('../assets/travel1.webp'); */
     background-image: url('../images/destination-Img/travel1.webp');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
   }
   
   .book {
     display: flex;
     position: relative;
+    margin-left: 17%;
+    margin-top: 2%;
+    width: 65%;
     backdrop-filter: blur(7px);
   }
   
