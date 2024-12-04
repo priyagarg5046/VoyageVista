@@ -1,4 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+<<<<<<< HEAD
+=======
+import logo from './logo.svg';
+>>>>>>> 7bb4ee34a8a0cf16509c9105febc8dd319252a66
 import './App.css';
 import Home from './Components/Home';
 import Signup from './Components/users/Signup';
