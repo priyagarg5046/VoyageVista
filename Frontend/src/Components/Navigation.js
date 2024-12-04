@@ -10,7 +10,7 @@ function Navigation() {
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Link to="/">
-          <Navbar.Brand>
+          <Navbar.Brand className='logo-name'>
             {/* <img src={logo} /> */}
             Voyage Vista
           </Navbar.Brand>
@@ -18,8 +18,8 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> {/* Changed me-auto to ms-auto */}
-            <Nav.Link href="#home">Destinations </Nav.Link>
-            <Nav.Link href="#link">Deals</Nav.Link>
+            <Nav.Link href="/Destinations">Destinations </Nav.Link>
+            <Nav.Link href="/Deals">Deals</Nav.Link>
             <Nav.Link href="#link">About</Nav.Link>
             <Nav.Link href="#link">Contact Us</Nav.Link>
             <Link to="/Signup">

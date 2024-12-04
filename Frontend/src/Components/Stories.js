@@ -1,33 +1,7 @@
-// import React from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Figure from 'react-bootstrap/Figure';
-// import reviews from '../media/rewiew.jpg';
-
-// function Stories() {
-//     return (
-//         <div style={{ background: 'rgb(245, 245, 245)', paddingBottom: '50px' }}>
-//     <h1 className='fw-bold p-5 text-center'>Traveler Stories</h1>
-//     <div className='d-flex justify-content-center'>
-//         <div className='d-flex align-items-center' style={{ background: 'white', width: '70%', border: '1px solid black', borderRadius: '20px' }}>
-//             <img src={reviews}style={{ width: '30%', height:'200%'}} />
-
-//         </div>
-//     </div>
-// </div>
-
-
-
-//     );
-// }
-
-// export default Stories;
-
-
-
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Image from 'react-bootstrap/Image';
-import reviews from '../media/rewiew.jpg';
+// import reviews from '../media/rewiew.jpg';
 const review = [
     {
         id: 1,
@@ -55,7 +29,7 @@ function Stories() {
                     {/* <img src={reviews} style={{ width: '30%', height:'200%'}}/> */}
                     <div className="col-md-6 pe-0">
                         <Image
-                            src={reviews}
+                            src="https://www.bing.com/ck/a?!&&p=15d2aa2fbcff99d4JmltdHM9MTcyNzgyNzIwMCZpZ3VpZD0wNTNlMzg5OS1iMDk0LTZlZDMtMGQ3My0yYzExYjE2NjZmYWQmaW5zaWQ9NTU0Mw&ptn=3&ver=2&hsh=3&fclid=053e3899-b094-6ed3-0d73-2c11b1666fad&u=a1L2ltYWdlcy9zZWFyY2g_cT1yZXZpZXcuanBnJkZPUk09SVFGUkJBJmlkPUY5REFCMDc1NUNBMTRBNkE1REUyMTYwN0QyMjBCOEVCOTFGMkE2MzU&ntb=1"
                             alt="Travel Destination"
                             className="img-fluid rounded-start h-100"
                             style={{ objectFit: 'cover' }}

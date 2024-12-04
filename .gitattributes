@@ -17,3 +17,4 @@
 /Frontend/src/Components/images/inspo-sec/swissapls.jpg filter=lfs diff=lfs merge=lfs -text
 /Frontend/src/Components/images/inspo-sec/tokyo.jpg filter=lfs diff=lfs merge=lfs -text
 /Frontend/src/Components/images/inspo-sec/yellowstone.jpg filter=lfs diff=lfs merge=lfs -text
+/Frontend/src/media/nature.mp4 filter=lfs diff=lfs merge=lfs -text
