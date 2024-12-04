@@ -1,3 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
 /Frontend/package-lock.json filter=lfs diff=lfs merge=lfs -text
 /Frontend/src/Components/images/destination-Img/bali.jpg filter=lfs diff=lfs merge=lfs -text
 /Frontend/src/Components/images/destination-Img/newyork.jpg filter=lfs diff=lfs merge=lfs -text
