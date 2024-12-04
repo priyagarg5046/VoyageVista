@@ -6,6 +6,11 @@ import Signup from './Components/users/Signup';
 import Navigation from "./Components/Navigation";
 import ContactUs from './Components/ContactUs';
 import Deals from './Components/Deals';
+import AllDestinations from './Components/Destination_pages/AllDestinations';
+import Beach_Destinations from './Components/Destination_pages/BeachDes';
+import City_Destinations from './Components/Destination_pages/CityDes' ;
+import Mountain_Destinations from './Components/Destination_pages/MountainDes' ;
+import Nature_Destinations from './Components/Destination_pages/NatureDes' ;
 // import Navbar from './Components/Header';
 import "bootstrap/dist/css/bootstrap.min.css"
 function App() {
@@ -34,6 +39,11 @@ function App() {
 <Route path='/' element={<Home/>}/>
 <Route path="/contact" element={<ContactUs />} />
 <Route path="/deals" element={<Deals />} />
+  <Route path='/AllDestinations' element={<AllDestinations/>}/>
+<Route path='/Beach_Destinations' element={<Beach_Destinations/>}/>
+<Route path='/Mountain_Destinations' element={<Mountain_Destinations/>}/>
+<Route path='/Nature_Destinations' element={<Nature_Destinations/>}/>
+<Route path='/City_Destinations' element={<City_Destinations/>}/>
 </Routes>
         
         
