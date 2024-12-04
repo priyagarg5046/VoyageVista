@@ -3,7 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Button from 'react-bootstrap/Button';
 import { BrowserRouter as Routes, Route, Link } from 'react-router-dom';
-import Destinations from './Destinations';
+import AllDestinations from './Destination_pages/AllDestinations';
 // import { Link } from 'react-router-dom';
 
 function Navigation() {
@@ -19,7 +19,7 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto"> {/* Changed me-auto to ms-auto */}
-            <Nav.Link href="/Destinations">Destinations </Nav.Link>
+            <Nav.Link href="/AllDestinations">Destinations </Nav.Link>
             <Link className="nav-link" to="/deals">Deals</Link>
             <Nav.Link href="#link">About</Nav.Link>
             {/* <Nav.Link href="#ContactUs">Contact Us</Nav.Link> */}
