@@ -1,35 +1,3 @@
-// import React from 'react';
-// import Button from 'react-bootstrap/Button';
-// import Card from 'react-bootstrap/Card';
-
-// function Inspo() {
-//     return (
-//         <div>
-//             <h1 className='fw-bold m-5'>Personalized Travel Recommendations</h1>
-
-//             <div className="row d-flex justify-content-center overflow-auto">
-//                 <div className="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
-//                     <Card style={{ width: '18rem' }}>
-//                         <Card.Img variant="top" src="holder.js/100px180" />
-//                         <Card.Body>
-//                             <Card.Title>Card Title</Card.Title>
-//                             <Card.Text>
-//                                 {/* Some quick example text to build on the card title and make up the
-//                                 bulk of the card's content. */}
-//                             </Card.Text>
-//                             <Button variant="primary">view</Button>
-//                         </Card.Body>
-//                     </Card>
-//                 </div>
-                
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default Inspo;
-
-
 import React, { useState } from 'react';
 import { Container, Row, Col, Tab, Nav, Card, Button } from 'react-bootstrap';
 import {  FaUmbrellaBeach,FaMountain, FaCity, FaTree } from 'react-icons/fa'; 
