@@ -60,7 +60,7 @@ function Navigation() {
             <Nav className="ms-auto">
               <Nav.Link href="/AllDestinations">Destinations</Nav.Link>
               <Link className="nav-link" to="/deals">Deals</Link>
-              <Nav.Link href="#link">About</Nav.Link>
+              <Link className="nav-link" to="/about">About</Link>
               <Link className="nav-link" to="/contact">Contact Us</Link>
               <Link to="/Signup">
                 <Button variant="light">Sign In</Button>
