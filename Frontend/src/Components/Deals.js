@@ -9,6 +9,7 @@ import dutyfree from './images/destination-Img/dutyfree.jpg';
 import hotel from './images/destination-Img/hotel.jpg';
 import bus from './images/destination-Img/bus.jpg';
 import refer from './images/destination-Img/refer.webp';
+import Footer from "./Footer";
 import dealimage from './images/destination-Img/deel.png'
 
 const Deals = () => {
@@ -64,6 +65,7 @@ const Deals = () => {
   ];
 
   return (
+    <div>
     <div className="deals-page">
       <h1 className="deals-heading">Special Deals & Offers</h1>
       <p>"Travel More for Less!"
@@ -85,7 +87,10 @@ Save on flights, hotels, and activities - your dream destination is just a click
             </div>
           </div>
         ))}
+        
       </div>
+    </div>
+    <Footer/>
     </div>
   );
 };

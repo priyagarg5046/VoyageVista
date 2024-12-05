@@ -48,8 +48,8 @@ function BeachDes() {
 
     return (
         <div className="p-5" style={{ background: 'rgb(245, 245, 245)' }}>
-            <h1 className="fw-bold pt-5" style={{ fontFamily: 'sans-serif' }}>Beach Destinations</h1>
-
+             <h1 className="fw-bold pt-5" style={{ fontFamily: 'Courier New' }}>Nature's Best Kept Secrets</h1>
+            <p className=" pb-5" style={{ fontFamily: 'Papyrus', fontSize:'1.5rem' }}>Explore untouched landscapes, lush forests, and breathtaking natural wonders that inspire awe and adventure.</p>
             <div className="container">
                 <div className="row justify-content-center pt-3">
                     {filteredData.map((destination, index) => (
