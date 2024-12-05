@@ -4,6 +4,7 @@ import Home from './Components/Home';
 import Signup from './Components/users/Signup';
 import Navigation from "./Components/Navigation";
 import ContactUs from './Components/ContactUs';
+import About from './Components/About';
 import Deals from './Components/Deals';
 import AllDestinations from './Components/Destination_pages/AllDestinations';
 import Beach_Destinations from './Components/Destination_pages/BeachDes';
@@ -38,6 +39,8 @@ function App() {
 <Route path='/' element={<Home/>}/>
 <Route path="/contact" element={<ContactUs />} />
 <Route path="/deals" element={<Deals />} />
+  <Route path="/about" element={<About />} />
+
   <Route path='/AllDestinations' element={<AllDestinations/>}/>
 <Route path='/Beach_Destinations' element={<Beach_Destinations/>}/>
 <Route path='/Mountain_Destinations' element={<Mountain_Destinations/>}/>
