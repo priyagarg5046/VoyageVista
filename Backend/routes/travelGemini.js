@@ -26,7 +26,7 @@ const generationConfig = {
   responseMimeType: "text/plain",
 };
 
-router.post("/itinerary",isLoggedIn,async (req,res) => {
+router.post("/itinerary",async (req,res) => {
   const { destination,duration,preferences } = req.body;
   if (!destination || !duration) {
     return res.status(400).json({ error: "Destination and duration are required" });
@@ -39,7 +39,7 @@ router.post("/itinerary",isLoggedIn,async (req,res) => {
     });
     
     const result = await chatSession.sendMessage(prompt);
-    //console.log(result);
+    console.log(result.response.text());
     res.send(result.response.text());
   } catch (err) {
     console.error("Error:", err);
