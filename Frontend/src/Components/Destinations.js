@@ -35,13 +35,16 @@ function Destinations() {
         return <div>Error: {error}</div>;
     }
 
+    // Slice the destinations array to get the latest 4 items
+    const latestDestinations = destinations.slice(-4);
+
     return (
         <div className='p-5' style={{ background: 'rgb(245, 245, 245)' }}>
             <h1 className='fw-bold pt-5' style={{ fontFamily: 'sans-serif' }}>Explore Popular Destinations</h1>
 
             <div className="container">
                 <div className="row justify-content-center pt-2">
-                    {destinations.map((destination, index) => (
+                    {latestDestinations.map((destination, index) => (
                         <div key={index} className="col-lg-3 col-md-6 mb-4 d-flex justify-content-center">
                             <Card style={{ width: '18rem' }}>
                                 <Card.Img
